@@ -104,3 +104,10 @@ Server OS 是專為運行各類伺服器應用程式而設計的操作系統，�
 - 容易維護
   
 而 Linux 是符合上述條件的 Server OS，而且免費使用，普及於個人、企業、機構等。
+
+Linux 發行版（Linux Distribution）通常區分以下兩種：
+
+- GUI（Graphic User Interface）
+- CUI（Character User Interface）
+
+Linux 發行版可追朔至 90 年代初期，由個別開發人員與社群創建，旨在將 Linux 內核與開源軟體和工具整合到完整的操作系統中。
