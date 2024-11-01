@@ -111,3 +111,9 @@ Linux 發行版（Linux Distribution）通常區分以下兩種：
 - CUI（Character User Interface）
 
 Linux 發行版可追朔至 90 年代初期，由個別開發人員與社群創建，旨在將 Linux 內核與開源軟體和工具整合到完整的操作系統中。
+
+#### GNU
+
+Richard Stallman 在 1980 年代創建 GNU（GNU's Not Unix）計畫，旨在開發一個完全自由和開放的 Unix-like 操作系統，但也強調它不是 Unix 的拷貝，而是受到 Unix 設計理念啟發，然而 GNU 計畫的內核 Hurd 進展緩慢。
+
+由於 Hurd 進展緩慢，Linux 內核被選為替代方案，開發者開始整合 Linux 內核與 GNU 工具和應用程式，創建一個完整的自由 Unix-like 操作系統，這就是現代 Linux 發行版的起源。
