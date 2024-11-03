@@ -1,5 +1,23 @@
 # 開源軟體實務
 
+- [開源軟體實務](#開源軟體實務)
+  - [章節](#章節)
+  - [開源軟體簡介](#開源軟體簡介)
+    - [代表性開源軟體](#代表性開源軟體)
+    - [開源軟體特性](#開源軟體特性)
+    - [開源許可證](#開源許可證)
+  - [Linux 簡介](#linux-簡介)
+    - [發展](#發展)
+      - [OS 的發展](#os-的發展)
+      - [伺服器 OS](#伺服器-os)
+      - [GNU](#gnu)
+
+## 章節
+
+- [檔案與目錄](doc/file-and-dir.md)
+- [使用者權限管理](doc/user-permission.md)
+- [使用 Shell 的實用功能](doc/shell.md)
+
 ## 開源軟體簡介
 
 **開源軟體（Open Source Software, OSS）**是指其原始碼可以**公開獲取**、**使用**和**分發**的軟體。
@@ -56,21 +74,21 @@
 ### 發展
 
 - 早期 UNIX（1960s ~ 1970s）
-    - 起初由 Bell Labs 的 Ken Thompson、Dennis Ritchie 等開發的實驗性操作系統，目標提供多人、多工處理的環境。
-    - 後因法律問題，AT&T 將 UNIX 程式碼公開。
-    - 1970 年代，UNIX 逐步在大學、研究所普及。Bill Joy，當時為加州大學柏克萊分校學生，帶領團隊催生出 UNIX 改良版的 BSD（Berkeley Software Distribution），打造網路環境。
-    - BSD 系統包括多個版本，如 FreeBSD、OpenBSD、NetBSD 等。
+  - 起初由 Bell Labs 的 Ken Thompson、Dennis Ritchie 等開發的實驗性操作系統，目標提供多人、多工處理的環境。
+  - 後因法律問題，AT&T 將 UNIX 程式碼公開。
+  - 1970 年代，UNIX 逐步在大學、研究所普及。Bill Joy，當時為加州大學柏克萊分校學生，帶領團隊催生出 UNIX 改良版的 BSD（Berkeley Software Distribution），打造網路環境。
+  - BSD 系統包括多個版本，如 FreeBSD、OpenBSD、NetBSD 等。
 - UNIX 的商業化（1980s）
-    - 卡內基美隆大學教授 Andrew Tannenbaum 改良 UNIX 成為 Apple 的 macOS 雛形。
-    - 隨 UNIX 成功，許多公司開始基於 UNIX 進行開發，並推出自己的版本，如 IBM 的 AIX、HP 的 HP-UX 和 Sun Microsystems 的 Solaris，這些商業版本在企業環境中取得了廣泛的應用。
+  - 卡內基美隆大學教授 Andrew Tannenbaum 改良 UNIX 成為 Apple 的 macOS 雛形。
+  - 隨 UNIX 成功，許多公司開始基於 UNIX 進行開發，並推出自己的版本，如 IBM 的 AIX、HP 的 HP-UX 和 Sun Microsystems 的 Solaris，這些商業版本在企業環境中取得了廣泛的應用。
 - Linus Torvalds 的創建（1991）
-    - Linux 的開發始於芬蘭大學生 Linus Torvalds，他於 1991 釋出了第一個 Linux 內核的版本。這是個人項目，但很快就吸引全球開發者與貢獻者。
+  - Linux 的開發始於芬蘭大學生 Linus Torvalds，他於 1991 釋出了第一個 Linux 內核的版本。這是個人項目，但很快就吸引全球開發者與貢獻者。
 - 開源運動的崛起（1990s ~ Present）
-    - Linux 的成功促使了開源運動的發展，它強調軟體自由和共享。許多企業和社群參與到 Linux 的開發中，形成龐大生態系統。
+  - Linux 的成功促使了開源運動的發展，它強調軟體自由和共享。許多企業和社群參與到 Linux 的開發中，形成龐大生態系統。
 - Linux 在不同領域的應用（Present）
-    - 伺服器、超級電腦、嵌入式系統、雲運算和物聯網等，是多用途操作系統的代表。
+  - 伺服器、超級電腦、嵌入式系統、雲運算和物聯網等，是多用途操作系統的代表。
 
->  Linux 是基於 UNIX 設計理念和哲學的開源作業系統，他們雖有不同起源和發展路徑，但在很大程度上共用相似的概念和原則。
+> Linux 是基於 UNIX 設計理念和哲學的開源作業系統，他們雖有不同起源和發展路徑，但在很大程度上共用相似的概念和原則。
 
 > Linux 不是直接由 UNIX 核心修改而成，而是從零開發的**類 UNIX（Unix-like）**操作系統，因開發上沒有使用 UNIX 的原始碼，所以不是 UNIX 的直接衍生版本。
 
@@ -102,7 +120,7 @@ Server OS 是專為運行各類伺服器應用程式而設計的操作系統，�
 - 沒有授權問題（e.g. 最高連線數目限制）
 - 性價比極高（e.g. 可於一台電腦架設多個 Server）
 - 容易維護
-  
+
 而 Linux 是符合上述條件的 Server OS，而且免費使用，普及於個人、企業、機構等。
 
 Linux 發行版（Linux Distribution）通常區分以下兩種：
