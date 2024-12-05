@@ -175,3 +175,61 @@ awk '模式 {操作}' 檔案名
 - 模式：文本行的匹配條件，可省略
 - 操作：條件匹配時執行的操作，輸出、計算、格式化等
 
+範例：
+
+```shell
+# 印出 /etc/passwd 所有內容
+awk '{print}' /etc/passwd
+
+# $1、$2、$3 表示文本分割後的第ㄧ、二、三個欄位，預設分割符號是空格
+awk '{print $1}' /etc/passwd
+
+# 將內容以 : 分割，取出分割後的第一、六欄位
+awk -F ':' '{print "字段 1：" $1, "字段 6：" $6}' /etc/passwd
+
+# 輸出包含關鍵字 pi 的行
+awk '/pi/ {print $1}' /etc/passwd
+```
+
+### sed
+
+根據一組規格（模式）編輯文本流，可用於*替換、刪除、插入、過濾和格式化*等操作。
+
+```shell
+sed [選項] '編輯命令' 檔案名
+```
+
+選項：
+
+- `-i`：直接在檔中編輯，而不是螢幕上顯示結果
+- `-e`：允許指定多個編輯命令
+
+編輯命令：替換、刪除、插入等
+
+
+範例：
+
+```shell
+# 每行的第一個 bin 替換成 hello
+sed 's/bin/hello/' /etc/passwd
+
+# 每行的所有 bin 替換成 hello
+sed 's/bin/hello/gg' /etc/passwd
+
+# 刪除有關鍵字 root 的行
+sed '/root/d' /etc/passwd
+
+# 在有關鍵字 root 的行後面新增一行 hello
+sed '/root/a hello' /etc/passwd
+
+# 在每行行尾加入 `; end`
+sed '/$/; end/' /etc/passwd
+
+# 在第一行前插入 `This is first line`
+sed '1i This is first line' /etc/passwd
+
+# 執行多個編輯命令
+# - 刪除關鍵字 root 的匹配行
+# - 刪除關鍵字 pi 的匹配行
+sed -e '/root/d' -e '/pi/d' /etc/passwd
+```
