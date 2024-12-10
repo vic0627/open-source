@@ -17,6 +17,8 @@
 - [檔案與目錄](doc/file-and-dir.md)
 - [使用者權限管理](doc/user-permission.md)
 - [使用 Shell 的實用功能](doc/shell.md)
+- [Shell 命令（一）](doc/shell-2.md)
+- [Shell 命令（二）](doc/shell-3.md)
 
 ## 開源軟體簡介
 
