@@ -110,7 +110,7 @@ Linux 中的程序可以分為父程序和子程序。
 
 ## 實戰範例
 
-### Apache 服務的操作
+### 實戰（ㄧ）：Apache 服務的操作
 以 Google Colab Linux 環境為例：
 
 1. 安裝 Apache：
@@ -132,4 +132,24 @@ Linux 中的程序可以分為父程序和子程序。
 5. 強制終止 Apache：
    ```bash
    $ kill -SIGKILL $(pidof apache2)
+   ```
+
+### 實戰（二）：訊號傳遞
+以 Google Colab Linux 環境為例，練習如何進行訊號的傳遞。
+
+1. 執行 Apache 服務程序：
+   ```bash
+   $ sudo service apache2 start
+   ```
+2. 顯示 Apache 程序的 PID：
+   ```bash
+   $ pidof apache2
+   ```
+3. 強制終止 Apache 程序：
+   ```bash
+   $ kill -9 $(pidof apache2)
+   ```
+4. 顯示 Apache 程序的 PID：
+   ```bash
+   $ pidof apache2
    ```
