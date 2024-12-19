@@ -8,6 +8,7 @@
 - [Shell 命令（二）](doc/shell-3.md)
 - [軟體與套件](doc/package.md)
 - [Shell Script](doc/shell-script.md)
+- [程序運作與管理](doc/program.md)
 
 ## 什麼是開源軟體？
 開源軟體（Open Source Software, OSS）是指其原始碼可供任何人自由存取、使用、修改和分發的軟體。以下是開源軟體的主要特性：
